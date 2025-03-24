@@ -13,11 +13,11 @@
   </head>
   <body>
     <section class="main">
-      <header class="header">
-        <nav class="flex">
-          <div class="logo">
-            <img src="./images/logo.png" alt="Logo" />
-          </div>
+      <header class="header flex">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo" />
+        </div>
+        <nav>
           <ul class="nav-social flex gap-nav" id="navMenu">
             <li>
               <a href="https://www.facebook.com/anhlv27/" target="_blank"
@@ -31,15 +31,16 @@
               >
             </li>
           </ul>
-          <div class="nav-icon flex gap-nav flex-at-c">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bars" id="menuToggle"></i>
-          </div>
         </nav>
+        <div class="nav-icon flex gap-nav flex-at-c">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-bars" id="menuToggle"></i>
+        </div>
       </header>
-
       <section class="hero">
-        <img src="./images/header.png" alt="" />
+        <div class="hero-image">
+          <img src="./images/header.png" alt="" />
+        </div>
       </section>
       <section class="content flex flex-jc-sa">
         <div class="main-content">
@@ -55,7 +56,7 @@
                 app to possibly access.
               </p>
             </div>
-            <button id="toggle-btn">Read more</button>
+            <a id="toggle-btn">Read more</a>
             <div class="sub-content-low-level">
               <p>
                 If you are in the market for a computer, there are a number of
@@ -108,7 +109,7 @@
         </p>
         <div class="review-users">
           <div class="review-user">
-            <img src="./images/Straight.png" alt="" />
+            <img src="./images/review-img.png" alt="" />
             <div class="user-icon">
               <img src="./images/User-Avatar-Profile-PNG-Photos.png" alt="" />
             </div>
@@ -119,7 +120,7 @@
             </p>
           </div>
           <div class="review-user">
-            <img src="./images/Straight.png" alt="" />
+            <img src="./images/review-img.png" alt="review image" />
             <div class="user-icon">
               <img src="./images/User-Avatar-Profile-PNG-Photos.png" alt="" />
             </div>
@@ -130,7 +131,7 @@
             </p>
           </div>
           <div class="review-user">
-            <img src="./images/Straight.png" alt="" />
+            <img src="./images/review-img.png" alt="review image" />
             <div class="user-icon">
               <img src="./images/User-Avatar-Profile-PNG-Photos.png" alt="" />
             </div>
@@ -143,21 +144,23 @@
         </div>
       </section>
       <section class="design">
-        <div class="grid">
-          <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
-          <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
-          <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
-          <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
-          <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
-          <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
-        </div>
-        <div class="info">
-          <h3 class="info-day">03/06</h3>
-          <h3 class="info-role">DESIGNER</h3>
-          <h3 class="info-name">Leroy Maxwell</h3>
-          <p>Collect Contact details for future ongoing relation.</p>
-          <div class="socials">
-            <img src="./images/SOCIAL.png" alt="" />
+        <div class="design-layout">
+          <div class="grid">
+            <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
+            <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
+            <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
+            <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
+            <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
+            <div class="item"><img src="./images/Straight 4.png" alt="" /></div>
+          </div>
+          <div class="info">
+            <h3 class="info-day">03/06</h3>
+            <h3 class="info-role">DESIGNER</h3>
+            <h3 class="info-name">Leroy Maxwell</h3>
+            <p>Collect Contact details for future ongoing relation.</p>
+            <div class="socials">
+              <img src="./images/SOCIAL.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -213,5 +216,5 @@
       </footer>
     </section>
   </body>
-  <script src="./script.js" ></script>
+  <script src="./script.js"></script>
 </html>
