@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .content__title {
+        font-size: 3.272rem;
+        font-weight: 400;
+        letter-spacing: 0.25px;
+        line-height: 100%;
+        color: #000000de;
+      }
+      
+      .content__permissions, 
+      .content__details-text {
+        font-weight: 400;
+        font-size: 1.54rem;
+        line-height: 2.4rem;
+        color: #00000099;
+      }
+      
+      .content__expand-title {
+        font-weight: 500;
+        font-size: 1.918rem;
+        line-height: 100%;
+        color: #000000de;
+      }
+      
+      .testimonials__header {
+        color: #00000099;
+        font-size: 1.342rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+      }
+      
+      .testimonials__title {
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 100%;
+        color: #000000de;
+      }
+      
+      .testimonials__description {
+        font-size: 1.54rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.015rem;
+        color: #000000de;
+      }
+      
+      .review__title {
+        font-weight: 400;
+        font-size: 4.619rem;
+        line-height: 100%;
+        color: #000000de;
+      }
+      
+      .review__description {
+        color: #00000099;
+        font-weight: 500;
+        font-size: 1.918rem;
+      }
+      
+      .review__user-name {
+        font-weight: 500;
+        font-size: 1.918rem;
+        line-height: 100%;
+        letter-spacing: 0.25px;
+        color: #000000de;
+      }
+      
+      .review__user-comment {
+        color: #666;
+        font-size: 1.54rem;
+        letter-spacing: 0.25px;
+      }
+      
+      .design__info {
+        background-color: #0000a0;
+        color: white;
+        padding: 7.8rem 4.8rem 5.5rem;
+      }
+      
+      .design__info-day {
+        font-weight: 400;
+        font-size: 1.54rem;
+        line-height: 2.4rem;
+      }
+      
+      .design__info-role {
+        font-weight: 400;
+        font-size: 1.54rem;
+        line-height: 2.4rem;
+        color: #ffffff99;
+      }
+      
+      .design__info-name {
+        font-weight: 500;
+        font-size: 1.918rem;
+        line-height: 100%;
+        letter-spacing: 0.25px;
+      }
+      
+      .design__info-description {
+        font-weight: 400;
+        font-size: 1.54rem;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: #ffffff99;
+      }
+      
+      .subscribe__title {
+        font-size: 4.619rem;
+        font-weight: 400;
+        color: #000000de;
+      }
+      
+      .subscribe__description {
+        font-size: 2.31rem;
+        font-weight: 400;
+        color: #00000099;
+      }
+      
+      .subscribe__input {
+        border: 1px solid #3b00dd;
+      }
+      
+      .subscribe__button {
+        background-color: #3b00dd;
+        color: white;
+      }
+      
+      .footer {
+        background-color: #f5f5f5;
+      }
+      
+      .footer__social-link {
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+      }
+      
+      .footer__social-link:hover {
+        background-color: red;
+        color: #fff;
+      }
+      
+      @media (max-width: 768px) {
+        .content__title {
+          font-size: 2.2rem;
+        }
+        
+        .review__title, .subscribe__title {
+          font-size: 3.619rem;
+        }
+        
+        .content__details {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header py-4">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="Logo" height="40">
+            </a>
+          </div>
+          <nav class="header__nav d-none d-md-block">
+            <ul class="list-unstyled d-flex gap-4 mb-0">
+              <li>
+                <a href="https://www.facebook.com/anhlv27/" target="_blank" class="text-decoration-none text-muted">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/" target="_blank" class="text-decoration-none text-muted">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/anhlv27/" target="_blank" class="text-decoration-none text-muted">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="d-flex gap-4 align-items-center">
+            <a href="#" class="text-muted">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#" class="text-muted">
+              <span class="material-symbols-outlined">apps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container-fluid px-0">
+        <img src="./images/header.png" alt="Hero Image" class="img-fluid w-100">
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content py-5 py-lg-12">
+      <div class="container">
+        <div class="row justify-content-around align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="content__title mb-5">
+              Working hard for something we don't care about is called stress. 
+              Working hard for something we love is called passion
+            </h1>
+            <div class="d-flex flex-column flex-lg-row gap-4">
+              <div class="content__expand">
+                <h2 class="content__expand-title mb-3">Expand</h2>
+                <p class="content__permissions mb-4 mb-lg-0">
+                  Clicking on that link grants permission to a bogus third-party
+                  app to possibly access.
+                </p>
+              </div>
+              <button id="toggle-btn" class="btn btn-primary align-self-start d-lg-none">Read more</button>
+              <div class="content__details d-none d-lg-block">
+                <p class="content__details-text">
+                  If you are in the market for a computer, there are a number of
+                  factors to consider. Will it be used for your home, your
+                  office or perhaps even your home office combo? First off, you
+                  will need to set a budget for your new purchase before
+                  deciding whether to shop for notebook or desktop computers.
+                  Many offices use desktop computers because they are not
+                  intended to be moved around a lot. In addition, affordability
+                  often plays a large role in someone's decision as to whether
+                  to purchase notebook or desktop computers.
+                </p>
+                <p class="content__details-text">
+                  While you are shopping around, it's important to keep in mind
+                  some of the benefits that go along with owning different types
+                  of computers. To that end, this article provides five
+                  important reasons to purchase desktop computers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <figure class="col-lg-4 text-center">
+            <img src="./images/Straight.png" alt="Photo by Author" class="img-fluid">
+            <figcaption class="mt-2">Photo by Author.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container-fluid">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="./images/Straight.png" alt="Testimonial Image" class="img-fluid w-100 h-100">
+          </div>
+          <div class="col-md-6 bg-light d-flex flex-column justify-content-center p-4 p-lg-12">
+            <div class="testimonials__header mb-2">Type Something</div>
+            <h1 class="testimonials__title mb-3">Money Back Guarantee</h1>
+            <p class="testimonials__description mb-5">
+              In doing the screenplay for 'Good Night, and Good Luck,' the most
+              important thing for me was to constantly go back to wherever the
+              opposition would argue. So I had to keep reading all the books and
+              articles about why McCarthy is such a good guy.
+            </p>
+            <div class="testimonials__brands">
+              <img src="./images/logo 2.png" alt="Brand Logo" class="img-fluid" style="max-height: 50px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="review py-5">
+      <div class="container text-center">
+        <h2 class="review__title mb-4">What People Say</h2>
+        <p class="review__description mb-5 mx-auto" style="max-width: 800px;">
+          The process of philosophic and scientific enlightenment has shaken the
+          stability of beliefs held explicitly as articles of faith.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 bg-light">
+              <img src="./images/review-img.png" class="card-img-top" alt="Review Background">
+              <div class="position-relative" style="margin-top: -40px;">
+                <img src="./images/User-Avatar-Profile-PNG-Photos.png" alt="User Avatar" class="rounded-circle border border-4 border-white" width="80">
+              </div>
+              <div class="card-body">
+                <h3 class="review__user-name mb-3">Jordan Welch</h3>
+                <p class="review__user-comment">
+                  If I haven't any talent for writing books or newspaper articles,
+                  well, then I can always write for myself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 bg-light">
+              <img src="./images/review-img.png" class="card-img-top" alt="Review Background">
+              <div class="position-relative" style="margin-top: -40px;">
+                <img src="./images/User-Avatar-Profile-PNG-Photos.png" alt="User Avatar" class="rounded-circle border border-4 border-white" width="80">
+              </div>
+              <div class="card-body">
+                <h3 class="review__user-name mb-3">Sally Gibbs</h3>
+                <p class="review__user-comment">
+                  The cool thing about Snapchat is you can get a lot of news on
+                  there now. There's CNN, ESPN, and I find myself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 bg-light">
+              <img src="./images/review-img.png" class="card-img-top" alt="Review Background">
+              <div class="position-relative" style="margin-top: -40px;">
+                <img src="./images/User-Avatar-Profile-PNG-Photos.png" alt="User Avatar" class="rounded-circle border border-4 border-white" width="80">
+              </div>
+              <div class="card-body">
+                <h3 class="review__user-name mb-3">Dominic Zimmerman</h3>
+                <p class="review__user-comment">
+                  A dwarf who brings a standard along with him to measure his own
+                  size, take my word, is a dwarf in more articles than one.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="design bg-light py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-9">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <img src="./images/Straight 4.png" alt="Design Image" class="img-fluid w-100">
+              </div>
+              <div class="col-md-4">
+                <img src="./images/Straight 4.png" alt="Design Image" class="img-fluid w-100">
+              </div>
+              <div class="col-md-4">
+                <img src="./images/Straight 4.png" alt="Design Image" class="img-fluid w-100">
+              </div>
+              <div class="col-md-4">
+                <img src="./images/Straight 4.png" alt="Design Image" class="img-fluid w-100">
+              </div>
+              <div class="col-md-4">
+                <img src="./images/Straight 4.png" alt="Design Image" class="img-fluid w-100">
+              </div>
+              <div class="col-md-4">
+                <img src="./images/Straight 4.png" alt="Design Image" class="img-fluid w-100">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="design__info h-100">
+              <h3 class="design__info-day mb-5">03/06</h3>
+              <h3 class="design__info-role mb-2">DESIGNER</h3>
+              <h3 class="design__info-name mb-2">Leroy Maxwell</h3>
+              <p class="design__info-description mb-5">
+                Collect Contact details for future ongoing relation.
+              </p>
+              <div class="design__socials">
+                <img src="./images/SOCIAL.png" alt="Social Icons" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <img src="./images/Straight 2.png" alt="Geometric Shapes" class="img-fluid">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="subscribe__title mb-3">Get Started Today</h2>
+            <p class="subscribe__description mb-5">Subscribe us to get more info</p>
+            <form class="row g-3">
+              <div class="col-12">
+                <input type="email" class="form-control subscribe__input py-3" placeholder="Email" required>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn subscribe__button w-100 py-3">SUBSCRIBE NOW</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 mb-4 mb-md-0">
+            <h3 class="h5 mb-3">Recent Posts</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2">Friends</li>
+              <li class="mb-2">Restaurants</li>
+              <li class="mb-2">Messages</li>
+              <li>Explore</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6 mb-4 mb-md-0">
+            <h3 class="h5 mb-3">Popular Posts</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2">Tasks</li>
+              <li class="mb-2">Profile</li>
+              <li class="mb-2">Pictures</li>
+              <li>Calendar</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6 mb-4 mb-md-0">
+            <h3 class="h5 mb-3">Posts address</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2">6636 Allie Manors</li>
+              <li>759 Kreiger Mountain</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h3 class="h5 mb-3">Follow us</h3>
+            <div class="d-flex gap-3">
+              <a href="#" class="footer__social-link d-inline-block">90</a>
+              <a href="#" class="footer__social-link d-inline-block">90</a>
+              <a href="#" class="footer__social-link d-inline-block">90</a>
+              <a href="#" class="footer__social-link d-inline-block">90</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      document.getElementById('toggle-btn').addEventListener('click', function() {
+        const details = document.querySelector('.content__details');
+        details.classList.toggle('d-none');
+        details.classList.toggle('d-block');
+      });
+    </script>
+  </body>
+</html>
